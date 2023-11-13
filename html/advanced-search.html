@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">   
+        <link rel="stylesheet" href="../css/index.css">
+        <link rel="stylesheet" href="../css/advanced.css">
+    </head>
+    <body>
+        <div class="header">
+            <i class="fa-brands fa-google fa-xl self big" style="color: #4A8CF7;"></i>
+            <i class="fa-solid fa-bars big bar" id="bar" style="color: #4A8CF7;"></i>
+
+            <div class="header-items">
+                <a href="/html/index.html" class="highlight">Google Search</a>
+                <a href="/html/image-search.html" class="highlight">Image Search</a>
+                <a href="" class="highlight">Advanced Search</a>
+                <button id="gitBtn" class="button-50" role="button">Github</button>
+            </div>
+           
+        </div>
+
+        <div class="advanced">
+            <div class="title">
+                <h1>Advanced Search on </h1>
+                <h1 class="highlight">Google</h1>
+            </div>
+            <form>
+                <p>Find pages with...</p>
+                <label for="allWords">all these words</label>
+                <input type="text"  id="allWords">
+                <label for="exactWord">this exact word or phrase:</label>
+                <input type="text" id="exactWord">
+                <label for="anyWord">any of these words:</label>
+                <input type="text"  id="anyWord">
+                <label for="noneWord">none of these words:</label>
+                <input type="text"  id="noneWord">
+                <input type="submit">    
+            </form>
+        </div>
+
+        <script src="../js/index.js"></script>
+    </body>
+</html>
