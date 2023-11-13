@@ -7,7 +7,7 @@ const exactWord = document.getElementById("exactWord");
 const anyWord = document.getElementById("anyWord");
 const noneWord = document.getElementById("noneWord");
 const barBtn = document.getElementById("bar");
-const show = document.querySelector(".show")
+const show = document.querySelector(".show-items")
 
 
 gitBtn.addEventListener('click', function(){
@@ -15,8 +15,9 @@ gitBtn.addEventListener('click', function(){
 });
 
 
-barBtn.addEventListener('click', function(){
-    console.log('clicou');
+barBtn.addEventListener('click', function() {
+    const isMenuVisible = window.getComputedStyle(show).getPropertyValue('display') === 'flex';
+    show.style.display = isMenuVisible ? 'none' : 'flex';
 });
 
 
