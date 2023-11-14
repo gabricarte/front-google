@@ -9,16 +9,17 @@ const noneWord = document.getElementById("noneWord");
 const barBtn = document.getElementById("bar");
 const show = document.querySelector(".show-items")
 
-
 gitBtn.addEventListener('click', function(){
     window.location.href = "https://github.com/gabricarte"; 
 });
 
-
 barBtn.addEventListener('click', function() {
-    const isMenuVisible = window.getComputedStyle(show).getPropertyValue('display') === 'flex';
-    show.style.display = isMenuVisible ? 'none' : 'flex';
+    if (show) {
+        const isMenuVisible = window.getComputedStyle(show).getPropertyValue('display') === 'flex';
+        show.style.display = isMenuVisible ? 'none' : 'flex';
+    }
 });
+
 
 
 if (url.includes("image-search")) {
