@@ -18,28 +18,24 @@
                 <a href="" class="highlight">Advanced Search</a>
                 <button id="gitBtn" class="button-50" role="button">Github</button>
             </div>
-           
         </div>
-
         <div class="advanced">
             <div class="title">
                 <h1>Advanced Search on </h1>
                 <h1 class="highlight">Google</h1>
             </div>
-            <form>
+            <form action="https://www.google.com/search" method="GET">
                 <p>Find pages with...</p>
                 <label for="allWords">all these words</label>
-                <input type="text"  id="allWords">
+                <input type="text" name="q" id="allWords">
                 <label for="exactWord">this exact word or phrase:</label>
-                <input type="text" id="exactWord">
+                <input type="text" name="as_epq" id="exactWord">
                 <label for="anyWord">any of these words:</label>
-                <input type="text"  id="anyWord">
+                <input type="text" name="as_oq" id="anyWord">
                 <label for="noneWord">none of these words:</label>
-                <input type="text"  id="noneWord">
-                <input type="submit">    
+                <input type="text" name="as_eq" id="noneWord">
+                <input type="submit" value="Advanced Search">    
             </form>
         </div>
-
-        <script src="../js/index.js"></script>
     </body>
 </html>
