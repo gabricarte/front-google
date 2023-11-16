@@ -20,11 +20,11 @@ body {
     padding: 5vh 10vh;
 }
 
-.header > .self {
+.self {
     margin-right: auto;
 }
 
- a{
+ .header-items > a, .show-items > a{
     margin: 5vh;
     text-decoration: none;
     font-weight: bold;
@@ -32,9 +32,12 @@ body {
     border-radius: 10px;
 }
 
-.header > a:hover{
-    color: white;
+a{
+  font-size: 2.5vh;
+}
 
+a:hover{
+  text-decoration: underline;
 }
 
 .bar{
@@ -43,7 +46,7 @@ body {
 
 input[type=text]{
     background-color: #202124;
-    outline: 1px solid #5F6368;
+    outline: 1.5px solid #5F6368;
 
 }
 
@@ -53,24 +56,18 @@ input[type=text]{
   flex-direction: column;
   top: 0;
   left: 0;
-  background-color: lightgray;
+  background-color: #27282B;
   transition: left 0.3s ease, width 0.3s ease;
-  width: 70vw;
+  width: 50vw;
   height: 100vh;
-  z-index: 999; /* Um número alto para garantir que esteja acima de outros elementos */
+  z-index: 999;
 }
 
 .show-items > a{
-  color: black;
-  font-size: 3vh;
+  color: white;
+  font-size: 2.5vh;
 }
 
-
-@media (min-width: 768px) {
-  .header > .button-50, .header > .header-items > .button-50 {
-    padding: 12px 50px;
-  }
-}
 
 @media (max-width: 1100px) {
     .header-items{
@@ -85,5 +82,7 @@ input[type=text]{
       font-size: 4vh;
     }
   
+    .header-items > a, .show-items > a{
+      margin: 5vh 2vh;}
   
 } 

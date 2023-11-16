@@ -7,7 +7,7 @@
 }
 
 .highlight {
-    color: #3AAB58;
+    color: white;
 }
 
 .main > .title {
@@ -16,6 +16,7 @@
 
 .main >.title >h1{
     margin: 0 4px;
+    font-size: 10vh;
 }
 
 .main > form{
@@ -30,7 +31,6 @@
     color: #1D1D1D;
 }
 
-
 .main > span{
     margin: 2vh 30px;
     font-size: 60px;
@@ -42,62 +42,17 @@
     padding: 0 0 0 200px;
 }
 
-
-.button-50 {
-    background-color: #3AAB58;
-    background-image: none;
-    font-family: 'Cedarville Cursive', cursive;
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-    border: 1px solid #3AAB58;
-    border-radius: 4px;
-    color: #1D1D1D;
-    box-shadow: #fff 4px 4px 0 0,#3AAB58 4px 4px 0 1px;
-    box-sizing: border-box;
-    cursor: pointer;
-    display: inline-block;
-    line-height: 15px;
-    overflow: visible;
-    padding: 12px 2px;
-    text-align: center;
-    text-transform: none;
-    touch-action: manipulation;
-    user-select: none;
-    -webkit-user-select: none;
-    vertical-align: middle;
-    white-space: nowrap;
-  }
-  
-.button-50:focus {
-    text-decoration: none;
-  }
-  
-.button-50:hover {
-    text-decoration: none;
-    background-color: #148030;
-  }
-  
-.button-50:active {
-    box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
-    outline: 0;
-  }
-  
-.button-50:not([disabled]):active {
-    box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
-    transform: translate(2px, 2px);
-  }
-
 .main > form > input[type=text] {
     padding: 15px;
 }
 
 .main > form > input[type=submit]{
-    background-color: #3AAB58;
+    background-color: #303134;
     font-weight: bold;
 }
 
 .main > form > input[type=submit]:hover{
-    background-color: #148030;
+    outline: 1.5px solid #5F6368;
     cursor: pointer;
 }
 
@@ -111,19 +66,24 @@
     border-radius: 50px;
 }
 
+.main > .title{
+    display: flex;
+    flex-direction: column;
+}
+
+.main > .title > p{
+    align-self: flex-end;
+    color: #4487D5;
+}
+
 @media (max-width: 1100px) {
-    
     .main >.title >h1{
-        font-size: 3vh;
+        font-size: 4vh;
         margin: 0 5px;
     }
-
-    
     .main > form > input{ 
     width: 70vw;
     font-size: 1.5vh;
     margin: 50px;
-}
-
-    
+    }
 }

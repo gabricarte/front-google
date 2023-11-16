@@ -8,20 +8,24 @@
 </head>
 <body>
     <div class="header">
-        <i class="fa-brands fa-google fa-xl self big" style="color: #148030;"></i>
-        <i class="fa-solid fa-bars big bar" id="bar" style="color: #148030;"></i>
+        <i class="fa-brands fa-google fa-xl self big" style="color: white;"></i>
+        <i class="fa-solid fa-bars big bar" id="bar" style="color: white;"></i>
         <div class="header-items">
             <a href="/html/index.html" class="highlight">Google Search</a>
             <a href="/html/image-search.html" class="highlight">Image Search</a>
             <a href="/html/advanced-search.html" class="highlight">Advanced Search</a>
-            <button id="gitBtn" class="button-50" role="button">Github</button>
+        </div>
+        <div class="show-items">
+            <a href="/html/index.html">Search</a>
+            <a href="/html/image-search.html">Image Search</a>
+            <a href="/html/advanced-search.html" >Advanced Search</a>
         </div>
     </div>
     
     <div class="main">
         <div class="title">
-            <h1>Search Images on </h1>
-            <h1 class="highlight">Google</h1>
+            <h1>Google</h1>
+            <p>Images</p>
         </div>
         <form action="https://www.google.com/search" method="GET">
             <input type="text" name="q" placeholder="Type here..." id="searchInput">
