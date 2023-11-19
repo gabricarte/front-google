@@ -70,7 +70,6 @@ footer > ul > li {
 input[type=text]{
     background-color: #202124;
     outline: 1.5px solid #5F6368;
-
 }
 
 .show-items {
@@ -107,5 +106,7 @@ input[type=text]{
     .header-items > a, .show-items > a{
       margin: 5vh 2vh;
     }
+
+    
   
 } 
