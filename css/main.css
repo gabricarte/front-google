@@ -6,10 +6,6 @@
     align-items: center;
 }
 
-.highlight {
-    color: white;
-}
-
 .main > .title {
     display: flex; 
 }
@@ -46,7 +42,6 @@
     padding: 15px;
 }
 
-
 .main > form > .btns > input[type=submit]:hover{
     outline: 1.5px solid #5F6368;
     cursor: pointer;
@@ -61,19 +56,26 @@
     margin: 5px;
     border-radius: 50px;
 }
-.main > form > input[type="text"]:hover{
+.dark > .main > form > input[type="text"]:hover{
     background-color: #303134;
 }
 
+.dark > .main > form > input[type="text"]{
+    background-color: #202124;
+}
+
 .main > form > .btns > input[type="submit"]{ 
-    padding: 0.3vw;
-    background-color: #303134;
     height: 7vh;
     width: 45%; 
     box-shadow: none;
     border: none;
     margin: 5px;
     border-radius: 5px;
+}
+
+.dark > .main > form > .btns > input[type="submit"]{
+    background-color: #303134;
+    color: white;
 }
 
 .btns{

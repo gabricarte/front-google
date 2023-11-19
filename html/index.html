@@ -7,39 +7,43 @@
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-    <div class="header">
-        <i class="fa-brands fa-google fa-xl self big" style="color: white;"></i>
-        <i class="fa-solid fa-bars big bar" id="bar" style="color: white;"></i>
-        <div class="header-items">
-            <a href="/html/image-search.html" class="highlight">Image Search</a>
-            <a href="/html/advanced-search.html" class="highlight">Advanced Search</a>
-        </div>
-        <div class="show-items">
-            <a href="/html/index.html">Search</a>
-            <a href="/html/image-search.html">Image Search</a>
-            <a href="/html/advanced-search.html" >Advanced Search</a>
-        </div>
-    </div>
-    <div class="main">
-        <div class="title">
-            <h1>Google</h1>
-        </div>
-        <form action="https://www.google.com/search" method="GET">
-            <input type="text" name="q" placeholder="Type here..." id="searchInput">
-            <div class="btns">
-                <input type="submit" value="Google Search">    
-                <input type="submit" name="btnI" value="I'm feeling lucky">
+    <div class="container">
+        <div class="header">
+            <i class="fa-brands fa-google fa-xl self big"></i>
+            <i class="fa-solid fa-bars big bar" id="bar"></i>
+            <div class="header-items">
+                <a href="/html/image-search.html" class="highlight">Image Search</a>
+                <a href="/html/advanced-search.html" class="highlight">Advanced Search</a>
             </div>
-        </form>
+            <div class="show-items">
+                <a href="/html/index.html">Search</a>
+                <a href="/html/image-search.html">Image Search</a>
+                <a href="/html/advanced-search.html" >Advanced Search</a>
+            </div>
+        </div>
+        <div class="main">
+            <div class="title">
+                <div class="title">
+                    <h1>
+                        <span class="g">G</span><span class="o1">o</span><span class="o2">o</span><span class="g">g</span><span class="l">l</span><span class="e">e</span>
+                    </h1>
+                </div>
+            </div>
+            <form action="https://www.google.com/search" method="GET">
+                <input type="text" name="q" placeholder="Type here..." id="searchInput">
+                <div class="btns">
+                    <input type="submit" value="Google Search">    
+                    <input type="submit" name="btnI" value="I'm feeling lucky">
+                </div>
+            </form>
+        </div>
+        <footer>
+            <ul>
+                <li><a href="https://about.google/?utm_source=google-BR&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a></li>
+                <li id="darkMode"><a href="#">Dark Theme: deactivated</a></li>
+            </ul>
+        </footer>
     </div>
-
-    <footer>
-        <ul>
-            <li><a href="https://about.google/?utm_source=google-BR&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a></li>
-            <li><a href="">Light Mode</a></li>
-        </ul>
-    </footer>
-
     <script src="../js/index.js"></script>
 </body>
 </html>
