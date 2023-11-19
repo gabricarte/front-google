@@ -1,5 +1,5 @@
 .main{
-    height: 90vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,17 +46,13 @@
     padding: 15px;
 }
 
-.main > form > input[type=submit]{
-    background-color: #303134;
-    font-weight: bold;
-}
 
-.main > form > input[type=submit]:hover{
+.main > form > .btns > input[type=submit]:hover{
     outline: 1.5px solid #5F6368;
     cursor: pointer;
 }
 
-.main > form > input{ 
+.main > form > input[type="text"]{ 
     padding: 10px;
     height: 7vh;
     width: 35vw;
@@ -65,6 +61,26 @@
     margin: 5px;
     border-radius: 50px;
 }
+.main > form > input[type="text"]:hover{
+    background-color: #303134;
+}
+
+.main > form > .btns > input[type="submit"]{ 
+    padding: 0.3vw;
+    background-color: #303134;
+    height: 7vh;
+    width: 45%; 
+    box-shadow: none;
+    border: none;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+}
+
 
 .main > .title{
     display: flex;
@@ -78,12 +94,18 @@
 
 @media (max-width: 1100px) {
     .main >.title >h1{
-        font-size: 4vh;
+        font-size: 6.5vh;
         margin: 0 5px;
     }
-    .main > form > input{ 
-    width: 70vw;
-    font-size: 1.5vh;
-    margin: 50px;
+        .main > form > input[type="text"]{ 
+        width: 70vw;
+        font-size: 1.5vh;
+        margin: 50px;
+        }
+
+    .main > form > .btns > input[type="submit"]{
+        width: 20vw;
+        font-size: 16px;
     }
+
 }
