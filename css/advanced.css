@@ -1,4 +1,3 @@
-
 .advanced > .title{
     display: flex;
 }
@@ -45,7 +44,6 @@
   border-radius: 5px;
 }
 
-
   @media (max-width: 1100px) {
   
     .advanced >.title >h1{
@@ -62,6 +60,4 @@
   .advanced{
     padding: 2vh;
   }
-
-  
 } 

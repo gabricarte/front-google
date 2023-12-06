@@ -26,4 +26,4 @@ function updateDarkModeText() {
     } else {
         darkModeText.innerHTML = '<a href="#">Dark Theme: deactivated</a>';
     }
-}
+};
