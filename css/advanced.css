@@ -1,63 +1,63 @@
 .advanced > .title{
-    display: flex;
+  display: flex;
 }
 
 .advanced >.title >h1{
-    margin: 0 4px;
+  margin: 0 4px;
 }
 
 .advanced { 
-    height: 90vh;
-    padding: 10vh;
-    display: flex;
-    flex-direction: column;
+  height: 90vh;
+  padding: 10vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .advanced > form{
-    display: flex;
-    flex-direction: column;
-    padding: 2vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2vh;
 }
 
 .advanced > form> p {
-    margin: 2vh 0;
+  margin: 2vh 0;
 }
 
 .advanced > form > input[type=submit]{
-    background-color: #D93025;
-    color: white;
-    font-weight: bold;
+  background-color: #4C8EFB;
+  color: white;
+  font-weight: bold;
 }
 
 .advanced > form > input[type=submit]:hover{
-    background-color: #D93025;
-    cursor: pointer;
+  background-color: #4C8EFB;
+  cursor: pointer;
 }
 
 .advanced > form > input{ 
-  padding: 10px;
-  height: 7vh;
-  width: 40vw;
-  box-shadow: none;
-  border: none;
-  margin: 5px;
-  border-radius: 5px;
+padding: 10px;
+height: 7vh;
+width: 40vw;
+box-shadow: none;
+border: none;
+margin: 5px;
+border-radius: 5px;
 }
 
-  @media (max-width: 1100px) {
-  
-    .advanced >.title >h1{
-      font-size: 2.5vh;
-      margin: 0 10px;
+@media (max-width: 1100px) {
+  .advanced >.title >h1{
+    font-size: 3vh;
+    margin: 0 10px;
+}
+  .advanced > form> p, .advanced > form> label {
+  font-size: 2vh;
   }
-
-    .advanced > form > input{ 
-    width: 70vw;
-    font-size: 1.5vh;
-    margin: 50px;
-  }
-
-  .advanced{
-    padding: 2vh;
-  }
+  .advanced > form > input{ 
+  width: 70vw;
+  font-size: 1.5vh;
+  margin: 50px;
+}
+.advanced{
+  padding: 2vh;
+}
 } 
